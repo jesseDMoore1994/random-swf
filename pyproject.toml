@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "random-swf"
+version = "0.1.0"
+description = ""
+authors = ["Jesse Moore <jesse@jessemoore.dev>"]
+readme = "README.md"
+packages = [{include = "random_swf"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+beautifulsoup4 = "^4.12.0"
+requests = "^2.28.2"
+returns = "^0.19.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+
+[tool.poetry.scripts]
+random-swf = 'random_swf.random_swf:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
